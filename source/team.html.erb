@@ -1,8 +1,13 @@
-<ul class="list-inline text-center padded">
-  <% ["anne", "seb", "romain"].each do |member| %>
-    <li>
-      <%= image_tag "#{member}.jpg", class: "img-circle", width: "100px" %>
-      <h3><%= member.capitalize %></h3>
-    </li>
-  <% end %>
-</ul>
+<div class="container padded">
+  <div class="row">
+    <% data.team.each do |member, infos| %>
+      <div class="col-md-4">
+        <div class="card">
+          <%= image_tag infos.picture, class: "img-thumbnail", width: "200px" %>
+          <h2><%= member.capitalize %></h2>
+          <p><%= infos.role %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

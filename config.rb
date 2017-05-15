@@ -1,3 +1,4 @@
+
 ###
 # Compass
 ###
@@ -26,6 +27,11 @@ activate :autoprefixer
 # with_layout :admin do
 #   page "/admin/*"
 # end
+
+data.flats.each do |name, x|
+  proxy "/flats/#{name}.html", "/flats/show.html", :locals => { :owner => name }, :ignore => true
+end
+
 
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", :locals => {

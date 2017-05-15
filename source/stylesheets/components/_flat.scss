@@ -1,0 +1,40 @@
+.form-wrapper-grey{
+  background-color: $gray-lighter;
+  padding: 20px;
+}
+.header-flat{
+  border: 1px solid $gray-lighter;
+}
+.header-flat-details{
+  display: flex;
+  align-items: center;
+}
+.header-flat-owner{
+  padding: 20px;
+}
+.header-flat-owner p{
+  font-size: 14px;
+  color: $gray-light;
+}
+.header-flat-name h4{
+  font-size: 18px;
+  margin-top: 0;
+}
+.header-flat-name p{
+  color: $gray-light;
+  font-size: 14px;
+}
+.flat-description hr{
+  margin-top: 22px;
+  margin-bottom: 22px;
+  border: 0;
+  border-top: 1px solid $gray-lighter;
+}
+.flat-description{
+  background-color: $gray-xlighter;
+  color: $gray-light;
+  font-size: 14px;
+}
+.flat-description h4{
+  color: $gray-dark;
+}
